@@ -1,0 +1,107 @@
+open-limit:
+{
+    "token":"",
+    "pair":"BTCUSDT",
+    "type":"MARKET",
+    "side":"BUY",
+    "price":"None",
+    "amount":0.1,
+    "leverage":55,
+    "margin":"crossed"
+}
+open-market:
+{
+    "token":"",
+    "pair":"BTCUSDT",
+    "type":"MARKET",
+    "side":"BUY",
+    "price":"None",
+    "amount":0.1,
+    "leverage":2,
+    "margin":"crossed"
+}
+
+close-market:
+{
+    "token":"",
+    "pair":"",
+    "amount":"",
+    "side":"",
+}
+Leverage: 1-125
+Margin: ISOLATED - CROSSED
+
+RESPONSES: {
+    ^^^^ ERRORS-Terminal ^^^^
+    -2631: Type Isn't Valid
+    -2314: Data Isn't Json
+    -2415: Json Data Is Incomplete
+    -2543: Token Isn't Valid
+    =====================================================
+    -2547: LIMIT Order - Limit Cash Insufficient
+    -2643: MARKET Order - Limit Cash Insufficient
+    -2676: MARKET Order - User Settings Isn't on OneWayMode
+    -2678: LIMIT Order - User Settings Isn't on OneWayMode
+    =====================================================
+    -4214: Leverage Isn't Valid
+    -4531: Can't Reduce Leverage On ISOLATED Margin While An Position is Open
+    -4218: Leverage Function Sent An Unknown Error
+    -5421: Margin Isn't Valid
+    -7424: Currently a Position Is Open On This Pair And Can't Change Margin For This Pair.
+    -6431: Market Order didn't Open because of unknown error
+    -6753: Market - The Entred Quantity Is Not Acceptable
+    -6441: Limit Order didn't Open because of unknown error
+    -6752: Limit - The Entred Quantity Is Not Acceptable
+    -7532: Error In Inserting Order To Database
+    -8213: Type Isn't Valid Not (MARKET - LIMIT)
+
+    ^^^^ ERRORS-Balance ^^^^
+    -2340: Can't Receive Json Data
+    -1341: Token Isn't In Json
+    -1342: Token Is Wrong
+    -1343: ApiKey Or SecretKey Isn't Valid
+
+    ^^^^ ERRORS-OpenPositions ^^^^
+    -9458: Token isn't Sent
+    -4342: Apikey Or SecretKey Not Found In Database
+    -5213: Apikey Or SecretKey Isn't Valid
+
+    ^^^^ ERRORS-Close ^^^^
+    -9314: Can't Receive Json Data
+    -9331: Token Isn't In Json Data
+    -9124: Token Isn't Valid
+    -9315: Couldn't Close The Position Because Of an Error
+    -9942: Couldn't Submit The Close Order In Database
+
+    ^^^^ APIKEY - SECRETKEY CHECKER ^^^^
+    -8864: Can't Receive Json Data
+    -5432: Token Isn't In Json Data
+    -4262: Token Isn't Valid
+    -6645: ApiKey Or SecretKey Isn't Valid
+
+    (positions)
+    [
+        {
+            "entryPrice": "31742.63000",
+            "isAutoAddMargin": "false",
+            "isolatedMargin": "918.49018853",
+            "leverage": "56",
+            "liquidationPrice": "31302.68865785",
+            "marginType": "isolated",
+            "markPrice": "31761.01677777",
+            "maxNotionalValue": "250000",
+            "notional": "49991.84040820",
+            "positionAmt": "1.574",
+            "positionSide": "BOTH",
+            "symbol": "BTCUSDT",
+            "unRealizedProfit": "28.94078820"
+        }
+    ]
+    <--------------------------------------------------->
+
+
+    <--------------------------------------------------->
+
+
+    <--------------------------------------------------->
+}
