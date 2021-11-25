@@ -1,4 +1,4 @@
-# Binance-Trade-Project
+# Api trading project
 Binance Futures Terminal-Trade(API) &amp; Binance
 
 ------------------------------------------------------------------------------------------------------------------------
